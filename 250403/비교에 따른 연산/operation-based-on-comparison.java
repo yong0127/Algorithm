@@ -9,7 +9,7 @@ public class Main {
         int inputB = scr.nextInt();
         int result = 0;
 
-        result = (inputA > inputB) ? inputA * inputB : inputA % inputB;
+        result = (inputA > inputB) ? inputA * inputB : inputB / inputA;
         System.out.print(result);
     }
 }
