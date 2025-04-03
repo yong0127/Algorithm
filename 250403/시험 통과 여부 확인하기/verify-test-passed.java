@@ -9,7 +9,7 @@ public class Main {
         int needMore      = 0;
         String resultMsg = "";
 
-        if(score > 80) {
+        if(score >= 80) {
             resultMsg = "pass";
         } else {
             needMore = 80 - score;
