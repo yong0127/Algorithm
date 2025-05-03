@@ -19,7 +19,7 @@ public class Main {
         if(b == 0) return a;
 
         int minNum = Math.min(a,b);
-        int gcd = 0;
+        int gcd = 1;
 
         for(int i=minNum; i>1; i--) {
             if(a%i==0 && b%i==0) {
