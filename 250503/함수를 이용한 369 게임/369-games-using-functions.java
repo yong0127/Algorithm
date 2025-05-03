@@ -20,12 +20,10 @@ public class Main {
     }
 
     public static boolean isTgtVal(int i) {
-        int tensDigit = i / 10;
-        int unitDigit = i % 10;
-        int[] tgtValArr = {3,6,9};
-
-        for(int j=0; j<tgtValArr.length; j++) {
-            if(tensDigit == tgtValArr[j] || unitDigit == tgtValArr[j]) {
+        String strNum = String.valueOf(i);
+        for(int j=0; j<strNum.length(); j++) {
+            char digitChar = strNum.charAt(j);
+            if(digitChar == '3' || digitChar == '6'|| digitChar == '9') {
                 return true;
             }
         }
@@ -33,7 +31,6 @@ public class Main {
     }
 
     public static boolean isMultVal(int i) {
-        if(i%3 == 0) return true;
-        else return false;
+        return i % 3 == 0;
     }
 }
